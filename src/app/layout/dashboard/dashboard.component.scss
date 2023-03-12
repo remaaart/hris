@@ -1,0 +1,82 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.example-container {
+  width: auto;
+  height: 93vh;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  width: 250px;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  width: inherit;
+  height: 45px;
+  border-radius: 0;
+  justify-content: left;
+  text-align: left;
+  padding: 0 0 0 25px;
+}
+
+.example-label:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.example-card {
+    width: inherit;
+    border-radius: 0;
+    height: 150px;
+    justify-content: center;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-content {
+    margin-left: 20px; /* adjust as needed */
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .expansionPanel{
+    border-radius: 0;
+    box-shadow: none;
+    width: inherit;
+  }
+  
+  .expansionPanelButton{
+    width: 250px;
+    font-size: 14px;
+    margin-left: -25px;
+    border-radius: 0;
+    justify-content: left;
+    text-align: left;
+    padding: 0 0 0 25px;
+  }
