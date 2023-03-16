@@ -1,5 +1,13 @@
-<div class="content" role="main">
-  <router-outlet></router-outlet>
-</div>
-
-  
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-menu-sidebar></app-menu-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <ng-container *ngIf="showMenu">
+      <app-menu-navbar (toggleSidebarForMe)="sideBarToggler()"></app-menu-navbar>
+  </ng-container>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

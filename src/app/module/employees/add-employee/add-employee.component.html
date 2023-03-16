@@ -1,0 +1,201 @@
+<mat-stepper labelPosition="bottom" #stepper style="background-color: rgb(243, 239, 239);">
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Personal Details</ng-template>
+        <div class="personal-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="container col-md-4" style="height: 300px; margin-bottom: 88px;">
+                        <div class="file-upload fileup upimage" id="file" data-input-name="input1" style="margin-top:21px;" data-filename="user-photo" onchange="Filevalidation(this)"><div class="file-input"><input name="input1" type="file" accept="image/*"></div><div class="drop-click-zone"><div class="filethumbnail"></div></div><div class="info"></div><div class="message"><p style="margin-top:25px; color:black; background-color: rgba(255, 255, 255, 0.8); font-weight:600;">Click here to upload image</p></div></div>
+                    </div>
+                    <div class="form-group" id="Company">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Company</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="Profile">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Profile</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="ProfileGroup">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Profile Group</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group" id="LastName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Last Name</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="FirstName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>First Name</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="MiddleName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Middle Name</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="ExtensionName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Extension Name</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="Gender">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Gender</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="NickName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Nick Name</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="NickName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Birthdate</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="NickName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Birthplace</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="NickName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Civil Status</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group" id="NickName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Citizenship</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="Company">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Blood Type</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="Profile">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Religion</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="ProfileGroup">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Height in ft</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="LastName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Weight in lbs</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="FirstName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Educational Attainment</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="MiddleName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>School</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="ExtensionName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Course</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="Gender">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Language/Dialects</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group" id="NickName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Interest and Hobbies</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="Company">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Distingushing Mark</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="Profile">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>Handicap/Disability</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="ProfileGroup">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>SSS</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="LastName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>PHIC</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="FirstName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>HDMF</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                    <div class="form-group" id="MiddleName">
+                        <label class="importantlabel" style="font-family: sans-serif; font-size: 15px;margin-bottom: 5px; margin-top: 5px;"><strong>TIN</strong></label>
+                        <input class="form-control reqfield nametxt" data-code="LastName" autocomplete="off" maxlength="30">
+                    </div>
+                </div>
+            </div>
+            <div style="justify-content: right; background-color: salmon; margin-top: 50px;">
+                <button mat-button matStepperNext style="background-color: yellow;justify-content: center; float: right; width: 150px;">Next</button>
+            </div>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" optional>
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Contact Details</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                 required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdFormGroup" optional>
+        <form [formGroup]="thirdFormGroup">
+          <ng-template matStepLabel>Work Details</ng-template>
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="thirdCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                   required>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="forthFormGroup" optional>
+        <form [formGroup]="forthFormGroup">
+          <ng-template matStepLabel>Salary Details</ng-template>
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="forthCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                   required>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="fifthFormGroup" optional>
+        <form [formGroup]="fifthFormGroup">
+          <ng-template matStepLabel>Payroll Settings</ng-template>
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="fifthCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                   required>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+</mat-stepper>

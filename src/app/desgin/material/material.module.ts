@@ -13,6 +13,10 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTabsModule } from '@angular/material/tabs';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
     exports:[
@@ -29,7 +33,11 @@ import { MatExpansionModule } from '@angular/material/expansion';
         MatButtonModule,
         MatToolbarModule,
         MatSidenavModule,
-        MatExpansionModule
+        MatExpansionModule,
+        MatListModule,
+        MatGridListModule,
+        MatTabsModule,
+        MatStepperModule
     ]
 })
 export class MaterialModule{}

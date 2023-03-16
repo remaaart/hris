@@ -1,0 +1,70 @@
+.menu-title[routerLink]{
+  display: table-cell;
+  color: #000000;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 45px;
+  border-radius: 0;
+  justify-content: left;
+  text-align: left;
+  padding: 0 0 0 24px;
+  background-color: #ffff;
+}
+
+.menu-dropdown-title{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.example-card {
+    width: inherit;
+    border-radius: 0;
+    height: 200px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-content {
+    margin-left: 20px; /* adjust as needed */
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .expansionPanel{
+    border-radius: 0;
+    box-shadow: none;
+    width: inherit;
+  }
+  
+  .expansionPanelButton{
+    width: 100%;
+    font-size: 12px;
+    margin: 5px;
+    border-radius: 0;
+    justify-content: left;
+    text-align: left;
+    padding: 0 0 0 25px;
+  }
