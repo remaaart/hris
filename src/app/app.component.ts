@@ -1,6 +1,7 @@
 import { Component, OnInit  } from '@angular/core';
 import { Router, NavigationEnd  } from '@angular/router';
 import { AuthService } from './service/auth.service';
+import { SidebarService } from './service/sidebar.service';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +13,12 @@ export class AppComponent implements OnInit {
   showMenu: boolean = false;
 
   constructor(
-    private router: Router
-    ) {}
+    private router: Router,
+    private sidebarService: SidebarService
+    ) {this.sidebarService.getSidebarState().subscribe(isOpen => {
+      this.sideBarOpen = isOpen;
+    });
+  }
   sideBarOpen = true;
 
   ngOnInit() {
@@ -28,4 +33,9 @@ export class AppComponent implements OnInit {
   sideBarToggler() {
     this.sideBarOpen = !this.sideBarOpen;
   }
+
+  toggleSidebar(): void {
+    this.sidebarService.toggleSidebar();
+  }
+  
 }

@@ -1,13 +1,14 @@
 <mat-drawer-container>
-  <mat-drawer mode="side" [opened]="sideBarOpen">
-    <app-menu-sidebar></app-menu-sidebar>
+  <mat-drawer #drawer mode="over" opened="false">
+    <app-menu-sidebar [drawerRef]="drawer"></app-menu-sidebar>
   </mat-drawer>
   <mat-drawer-content>
     <ng-container *ngIf="showMenu">
-      <app-menu-navbar (toggleSidebarForMe)="sideBarToggler()"></app-menu-navbar>
-  </ng-container>
-    <div class="container-fluid">
-      <router-outlet></router-outlet>
-    </div>
+      <mat-toolbar style="padding: 0;">
+        <app-menu-navbar (click)="drawer.toggle()"></app-menu-navbar>
+        <span>Human Resource Information System</span>
+      </mat-toolbar>
+    </ng-container>
+    <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

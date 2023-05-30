@@ -11,15 +11,15 @@
         </mat-card-header>
     </mat-card>
     <mat-divider></mat-divider>
-    <button class="menu-title" mat-button routerLink="/dashboard">DASHBOARD</button>
+    <button class="menu-title" mat-button routerLink="/dashboard" (click)="onButtonClick()">DASHBOARD</button>
     <mat-expansion-panel class = "expansionPanel" (click)="handleClick()" #panel1 [expanded]="expandedPanel === 'panel1'">
         <mat-expansion-panel-header (click)="panelClick('panel1')">
         <mat-panel-title class="menu-dropdown-title">
             EMPLOYEES
         </mat-panel-title>
         </mat-expansion-panel-header>
-        <button class="expansionPanelButton" mat-button routerLink="/add-employee">ADD EMPLOYEE</button>
-        <button class="expansionPanelButton" mat-button routerLink="/employee-list">EMPLOYEE LIST</button>
+        <button class="expansionPanelButton" mat-button routerLink="/add-employee" (click)="onButtonClick()">ADD EMPLOYEE</button>
+        <button class="expansionPanelButton" mat-button routerLink="/employee-list" (click)="onButtonClick()">EMPLOYEE LIST</button>
     </mat-expansion-panel>
     <mat-expansion-panel class = "expansionPanel" (click)="handleClick()" #panel2 [expanded]="expandedPanel === 'panel2'">
         <mat-expansion-panel-header (click)="panelClick('panel2')">
@@ -27,11 +27,11 @@
             REQUEST
         </mat-panel-title>
         </mat-expansion-panel-header>
-        <button class="expansionPanelButton" mat-button routerLink="/leave-request">LEAVE</button>
-        <button class="expansionPanelButton" mat-button routerLink="/overtime-request">OVERTIME</button>
-        <button class="expansionPanelButton" mat-button routerLink="/changeshift-request">CHANGE SHIFT</button>
-        <button class="expansionPanelButton" mat-button routerLink="/timecorrection-request">TIME CORRECTION</button>
-        <button class="expansionPanelButton" mat-button routerLink="/request-list">REQUEST LIST</button>
+        <button class="expansionPanelButton" mat-button routerLink="/leave-request" (click)="onButtonClick()">LEAVE</button>
+        <button class="expansionPanelButton" mat-button routerLink="/overtime-request" (click)="onButtonClick()">OVERTIME</button>
+        <button class="expansionPanelButton" mat-button routerLink="/changeshift-request" (click)="onButtonClick()">CHANGE SHIFT</button>
+        <button class="expansionPanelButton" mat-button routerLink="/timecorrection-request" (click)="onButtonClick()">TIME CORRECTION</button>
+        <button class="expansionPanelButton" mat-button routerLink="/request-list" (click)="onButtonClick()">REQUEST LIST</button>
     </mat-expansion-panel>
     <mat-expansion-panel class = "expansionPanel" (click)="handleClick()" #panel2 [expanded]="expandedPanel === 'panel3'">
         <mat-expansion-panel-header (click)="panelClick('panel3')">
@@ -39,28 +39,28 @@
             REPORTS
         </mat-panel-title>
         </mat-expansion-panel-header>
-        <button class="expansionPanelButton" mat-button routerLink="/leaveReport">LEAVE REPORT</button>
-        <button class="expansionPanelButton" mat-button routerLink="/overtimReporte">OVERTIME REPORT</button>
-        <button class="expansionPanelButton" mat-button routerLink="/changeShiftReport">CHANGE SHIFT REPORT</button>
-        <button class="expansionPanelButton" mat-button routerLink="/timeCorrectionReport">TIME CORRECTION REPORT</button>
-        <button class="expansionPanelButton" mat-button routerLink="/leaveCreditAndUsageReport">LEAVE CREDIT AND USAGE REPORT</button>
-        <button class="expansionPanelButton" mat-button routerLink="/approvalRouteReport">APPROVAL ROUTE REPORT</button>
+        <button class="expansionPanelButton" mat-button routerLink="/leaveReport" (click)="onButtonClick()">LEAVE REPORT</button>
+        <button class="expansionPanelButton" mat-button routerLink="/overtimReporte" (click)="onButtonClick()">OVERTIME REPORT</button>
+        <button class="expansionPanelButton" mat-button routerLink="/changeShiftReport" (click)="onButtonClick()">CHANGE SHIFT REPORT</button>
+        <button class="expansionPanelButton" mat-button routerLink="/timeCorrectionReport" (click)="onButtonClick()">TIME CORRECTION REPORT</button>
+        <button class="expansionPanelButton" mat-button routerLink="/leaveCreditAndUsageReport" (click)="onButtonClick()">LEAVE CREDIT AND USAGE REPORT</button>
+        <button class="expansionPanelButton" mat-button routerLink="/approvalRouteReport" (click)="onButtonClick()">APPROVAL ROUTE REPORT</button>
     </mat-expansion-panel>
-    <button class="menu-title" mat-button routerLink="/timeRegister">TIME REGISTER</button>
-    <button class="menu-title" mat-button routerLink="/leaveCredits">LEAVE CREDITS</button>
-    <button class="menu-title" mat-button routerLink="/approvalRoute">APPROVAL ROUTE</button>
+    <button class="menu-title" mat-button routerLink="/timeRegister" (click)="onButtonClick()">TIME REGISTER</button>
+    <button class="menu-title" mat-button routerLink="/leaveCredits" (click)="onButtonClick()">LEAVE CREDITS</button>
+    <button class="menu-title" mat-button routerLink="/approvalRoute" (click)="onButtonClick()">APPROVAL ROUTE</button>
     <mat-expansion-panel class = "expansionPanel" (click)="handleClick()" #panel2 [expanded]="expandedPanel === 'panel4'">
         <mat-expansion-panel-header (click)="panelClick('panel4')">
         <mat-panel-title class="menu-dropdown-title">
             SYSTEM CONFIGURATION
         </mat-panel-title>
         </mat-expansion-panel-header>
-        <button class="expansionPanelButton" mat-button routerLink="/companyList">COMPANY LIST</button>
-        <button class="expansionPanelButton" mat-button routerLink="/costcenter">COSTCENTER</button>
-        <button class="expansionPanelButton" mat-button routerLink="/leaveCodeList">LEAVE CODE LIST</button>
-        <button class="expansionPanelButton" mat-button routerLink="/shiftCodeList">SHIFT CODE LIST</button>
+        <button class="expansionPanelButton" mat-button routerLink="/companyList" (click)="onButtonClick()">COMPANY LIST</button>
+        <button class="expansionPanelButton" mat-button routerLink="/costcenter" (click)="onButtonClick()">COSTCENTER</button>
+        <button class="expansionPanelButton" mat-button routerLink="/leaveCodeList" (click)="onButtonClick()">LEAVE CODE LIST</button>
+        <button class="expansionPanelButton" mat-button routerLink="/shiftCodeList" (click)="onButtonClick()">SHIFT CODE LIST</button>
     
     </mat-expansion-panel>
-    <button (click)="onLogoutClicked()" class="menu-title" mat-button routerLink="/logout">LOGOUT</button>
+    <button (click)="onLogoutClicked()" class="menu-title" mat-button routerLink="/logout" (click)="onButtonClick()">LOGOUT</button>
 
 </div>

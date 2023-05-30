@@ -1,82 +1,87 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
-.example-container {
-  width: auto;
-  height: 93vh;
-  border: 1px solid rgba(0, 0, 0, 0);
+.container-fluid{
+  padding: 25px;
+  margin: 0;
 }
 
-.example-sidenav-content {
-  display: flex;
+#announcement {
   height: 100%;
+	background-color: #f2f2f2;
+  // margin-left: 15px;
+  // padding: 20px;
+  margin-bottom: 5px;
+	border: 1px solid #ccc;
+  min-height: 500px;
+}
+
+#employee-stats {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+  height: auto;
   align-items: center;
-  justify-content: center;
+	padding-top: 0px;
+  padding-bottom: 20px;
 }
 
-.example-sidenav {
-  width: 250px;
+.employee-stat {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+	text-align: center;
+	width: 150px;
+  height: 150px;
 }
 
-.example-label {
-  display: table-cell;
-  font-size: 14px;
-  width: inherit;
-  height: 45px;
-  border-radius: 0;
-  justify-content: left;
-  text-align: left;
-  padding: 0 0 0 25px;
-}
-
-.example-label:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-.example-button-container {
+#event{
   display: flex;
-  justify-content: center;
-  width: 120px;
+	flex-wrap: wrap;
+	justify-content:center;
+  height: auto;
+  width: 100%;
+  align-items:flex-end;
+	padding-top: 0px;
+  background-color: transparent;
 }
 
-.example-card {
-    width: inherit;
-    border-radius: 0;
-    height: 150px;
-    justify-content: center;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: 100px;
-    width: 100px;
-    height: 100px;
-  }
+.employee-birthdays {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	// padding: 20px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 370px;
+  width: 45%;
+  min-width: 200px;
+}
 
-  .header-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header-content {
-    margin-left: 20px; /* adjust as needed */
-    padding: 0;
-    margin-bottom: 20px;
-  }
+.holidays {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	// padding: 20px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 370px;
+  width: 45%;
+  min-width: 200px;
+}
 
-  .expansionPanel{
-    border-radius: 0;
-    box-shadow: none;
-    width: inherit;
-  }
-  
-  .expansionPanelButton{
-    width: 250px;
-    font-size: 14px;
-    margin-left: -25px;
-    border-radius: 0;
-    justify-content: left;
-    text-align: left;
-    padding: 0 0 0 25px;
-  }
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 10px 0;
+}
+
+#employee-statistics {
+	background-color: #f2f2f2;
+  margin-top: 25px;
+	border: 1px solid #ccc;
+  height: 500px;
+}

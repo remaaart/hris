@@ -1,23 +1,66 @@
-<mat-grid-list cols="12" rowHeight="3:1">
-     <div>
-        <mat-grid-tile rowspan="12" colspan="8" style="background-color: aqua;">Announcement</mat-grid-tile>
+<div class="container-fluid" style="background-color: #E5E5E5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-8" style="margin-bottom: 10px;">
+                    <div id="announcement">
+                        <h2 style="color: whitesmoke; background-color: rgb(74, 69, 69); padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">Announcement</h2>
+                        <p>Welcome to the Employee Dashboard. Here you can find important information about our employees.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="employee-stats">
+                        <div class="col-md-2 employee-stat">
+                            <h3 style="color: whitesmoke; background-color: rgb(95, 217, 95); padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">
+                                <strong>Acitve</strong>
+                            </h3>
+                            <p style="margin-top: 40px; font-size: 40px;">50</p>
+                        </div>
+                        <div class="col-md-2 employee-stat">
+                            <h3 style="color: whitesmoke; background-color: rgb(194, 51, 51); padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">
+                                <strong>Inactive</strong> 
+                            </h3>
+                            <p style="margin-top: 40px; font-size: 40px;">20</p>
+                        </div>
+                        <div class="col-md-2 employee-stat">
+                            <h3 style="color: whitesmoke; background-color: rgb(80, 124, 219); padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">
+                                <strong>New Hire</strong>
+                            </h3>
+                            <p style="margin-top: 40px; font-size: 40px;">5</p>
+                        </div>
+                        <div class="col-md-2 employee-stat">
+                            <h3 style="color: whitesmoke; background-color: rgb(74, 69, 69); padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">
+                                <strong>Total</strong> 
+                            </h3>
+                            <p style="margin-top: 40px; font-size: 40px;">75</p>
+                        </div>
+                    </div>
+                    <div id="event">
+                        <div class="col-md-4 holidays">
+                            <h2 style="color: whitesmoke; background-color: #3E6D52; padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">Holidays</h2>
+                            <ul>
+                                <li>Jan. 1, 2023 - New Year</li>
+                                <li>Dec. 25, 2023 - Christmas</li>
+                                <li>Nov. 1, 2023 - Halloween</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 employee-birthdays">
+                            <h2 style="color: whitesmoke; background-color: #E0115F; padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">Birthdays</h2>
+                            <ul>
+                                <li>John Doe - March 4th</li>
+                                <li>Jane Smith - March 12th</li>
+                                <li>Bob Johnson - March 20th</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="background-color: transparent; margin: 0;">
+                <div id="employee-statistics">
+                    <h2 style="color: whitesmoke; background-color: rgb(74, 69, 69); padding-top: 10px;padding-bottom: 10px;padding-right: 5px;padding-left: 5px; text-align: center;">Employee Statistics</h2>
+                    <p>Insert employee statistics here.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <mat-grid-tile rowspan="4" style="background-color: aqua;">Active Employee</mat-grid-tile>
-    </div>
-    <div>
-        <mat-grid-tile rowspan="4" style="background-color: aqua;">Inactive Employee</mat-grid-tile>
-    </div>
-    <div>
-        <mat-grid-tile rowspan="4" style="background-color: aqua;">New Hire</mat-grid-tile>
-    </div>
-    <div>
-        <mat-grid-tile rowspan="4" style="background-color: aqua;">Total Employee</mat-grid-tile>
-    </div>
-    <div>
-        <mat-grid-tile rowspan="8" colspan="4"  style="background-color: aqua;">Birthday</mat-grid-tile>
-    </div>  
-    <div>
-        <mat-grid-tile rowspan="8" colspan="12" style="background-color: aqua;">Employee Statistic</mat-grid-tile>
-    </div>   
-</mat-grid-list>
+</div>

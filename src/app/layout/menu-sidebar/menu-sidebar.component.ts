@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu-sidebar.component.scss']
 })
 export class MenuSidebarComponent {
+  @Input() drawerRef: any;
   
   constructor(private router:Router){}
 
@@ -27,5 +28,11 @@ export class MenuSidebarComponent {
 
   onLogoutClicked(){
     this.router.navigate(['']);
+  }
+
+  onButtonClick() {
+    this.drawerRef.close();
+    this.expandedPanel = "";
+    console.log('side bar buttons success')
   }
 }
